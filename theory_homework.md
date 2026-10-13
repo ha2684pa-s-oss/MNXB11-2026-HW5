@@ -37,8 +37,18 @@ int* pointer = &x;
 ```
 
 
-## 5. Write the class declaration for a 2D point class consisting of an x and a y coordinate a destructor, and two constructors  (declaration is sufficient):
+## 5. Write the class declaration for a 2D point class consisting of an x and a y coordinate a destructor, and two constructors: one default and one taking two parameters.
 
-### 5.1. A default constructor
+```cpp
+class Point2D {
+    public:
+    Point2D();  // default constructor
+    Point2D(int x, int y);  // constructor with 2 parameters
+    
+    ~Point2D();  // destructor
 
-### 5.2. A constructor taking two parameters, one for each point
+    private:
+        int x;
+        int y;
+};
+``` 
