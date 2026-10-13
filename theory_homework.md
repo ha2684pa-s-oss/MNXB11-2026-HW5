@@ -2,6 +2,9 @@
 
 ## 1. Describe briefly what a static/dynamic library is and some reasons to use one over the other
 
+A **static library** consists of routines that are compiled and linked directly into the program. When compiling a program which uses a static library, it becomes part of the executable. Since the library (or at least the parts used by the program) is sort of merged with the program / is part of the executable, the right version of said library is always used, since it is "built-in". However, this also means that to access any updates of the library, the entire executable needs to be replaced. 
+
+**Dynamic libraries** are loaded into the application at run time. They do not become parts of the executable during compilation but instead remains separate. This makes it possible for many programs to share one copy, which saves space, but also ensures that no executables needs to be replaced if the library is upgraded to a newer version. However, since dynamic libraries are not included in the executable, the programs must have the added functionality needed to load and use the dynamic library. Also have to pay attention to library version since this is not handled automatically during compilation (as is done with a static library).
 
 ## 2. What flags would you need to pass to the linker to tell it to look for library files in a directory called /some/dir/lib and to link to a library file called libfmt-3.2.0.so
 ```bash
