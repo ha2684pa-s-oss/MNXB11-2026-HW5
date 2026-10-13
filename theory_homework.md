@@ -26,7 +26,15 @@ int my_function(int i, int j) {  // returns an int, two parameters i, j
 
 ## 4. Given an object like `int x{3};`, 
 ### 4.1. How would you get its address?
+
+By using the "address of" operator `&`, i.e. `&x`. 
 ### 4.2. How would you write the type of a pointer to the object?
+
+For pointers, the type is denoted by `*`. For example: 
+```cpp
+int x{3};
+int* pointer = &x;
+```
 
 
 ## 5. Write the class declaration for a 2D point class consisting of an x and a y coordinate a destructor, and two constructors  (declaration is sufficient):
