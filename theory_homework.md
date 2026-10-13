@@ -4,6 +4,10 @@
 
 
 ## 2. What flags would you need to pass to the linker to tell it to look for library files in a directory called /some/dir/lib and to link to a library file called libfmt-3.2.0.so
+```bash
+-L/some/dir/lib -lfmt-3.2.0
+```
+
 
 ## 3. Describe the four parts of a function definition. What parts of the definition constitute the function's signature?
 
