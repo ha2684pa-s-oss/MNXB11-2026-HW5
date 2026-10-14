@@ -44,6 +44,17 @@ namespace homework {
   // The attack should use std::cout to print something like "<name> swings a <weapon>\n"
   // The setWeapon() method should set the weapon variable (the private member variable) 
 
+
+class Knight : public Entity {
+  public:
+    void attack() const override {
+      std::cout << name << " uses a " << weapon_ << "\n";
+    };
+
+  private:
+    std::string weapon_;
+
+} 
   // as 2.2
   // Derived class Sorcerer
   // TO DO: implement attack() and clone() and setAbility()
