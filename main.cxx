@@ -12,5 +12,6 @@ int main() {
     auto knight = homework::Knight("Ben", "sword");
     
     knight.attack();
+    knight.setWeapon("axe");
 };
 

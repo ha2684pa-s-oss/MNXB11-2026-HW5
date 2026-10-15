@@ -3,6 +3,9 @@
 namespace homework {
     Knight::Knight(const std::string name, std::string weapon)
         : Entity(name), weapon_(weapon) {}
+    
+    Knight::Knight(const std::string name)
+        : Entity(name), weapon_("nothing") {}
 
 
 

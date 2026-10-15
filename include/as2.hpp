@@ -47,7 +47,8 @@ namespace homework {
 
 struct Knight : public Entity {
   public:
-    explicit Knight(const std::string name, std::string weapon); 
+    explicit Knight(const std::string name, std::string weapon);
+    explicit Knight(const std::string name); 
     // explicit prevents unwanted/unknown objects from being created
 
     void attack() const override;
