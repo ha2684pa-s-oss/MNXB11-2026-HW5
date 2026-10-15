@@ -67,6 +67,20 @@ struct Knight : public Entity {
   // Same as the Knight class
 
 
+struct Sorcerer : public Entity {
+  public:
+    explicit Sorcerer(const std::string name);
+
+    void attack() const override;
+
+    void setAbility(const std::string newAbility);
+
+    std::unique_ptr<Entity> clone() const override;
+
+
+  private:
+    std::string ability_;
+};
 
   /////////
 
